@@ -109,35 +109,36 @@ static Il2CppMethodPointer s_methodPointers[28] =
 };
 static const int32_t s_InvokerIndices[28] = 
 {
-	1567,
-	1568,
+	1555,
+	1556,
 	35,
 	124,
 	32,
 	32,
-	1569,
+	1557,
 	6,
-	1570,
+	1558,
 	64,
 	26,
-	1571,
-	1572,
+	1559,
+	1560,
 	327,
 	327,
 	275,
-	1019,
-	1019,
+	1024,
+	1024,
 	275,
 	275,
-	1573,
+	1561,
 	32,
 	275,
-	1019,
-	1019,
+	1024,
+	1024,
 	658,
-	1053,
+	1054,
 	104,
 };
+extern const Il2CppDebuggerMetadataRegistration g_DebuggerMetadataRegistrationUnityEngine_ParticleSystemModule;
 extern const Il2CppCodeGenModule g_UnityEngine_ParticleSystemModuleCodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_ParticleSystemModuleCodeGenModule = 
 {
@@ -151,5 +152,5 @@ const Il2CppCodeGenModule g_UnityEngine_ParticleSystemModuleCodeGenModule =
 	NULL,
 	0,
 	NULL,
-	NULL,
+	&g_DebuggerMetadataRegistrationUnityEngine_ParticleSystemModule,
 };

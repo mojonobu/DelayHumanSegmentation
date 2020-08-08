@@ -20,6 +20,7 @@ IL2CPP_EXTERN_C_END
 
 
 
+extern const Il2CppDebuggerMetadataRegistration g_DebuggerMetadataRegistrationSystem_Diagnostics_StackTrace;
 extern const Il2CppCodeGenModule g_System_Diagnostics_StackTraceCodeGenModule;
 const Il2CppCodeGenModule g_System_Diagnostics_StackTraceCodeGenModule = 
 {
@@ -33,5 +34,5 @@ const Il2CppCodeGenModule g_System_Diagnostics_StackTraceCodeGenModule =
 	NULL,
 	0,
 	NULL,
-	NULL,
+	&g_DebuggerMetadataRegistrationSystem_Diagnostics_StackTrace,
 };

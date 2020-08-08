@@ -1,8 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - UnityEngine.XR.ARFoundation.Samples.BackButton
-    - UnityEngine.XR.ARFoundation.Samples.ProjectileLauncher
+    - DelayedCamera
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -15,16 +14,6 @@ ScriptsOnlyBuild:
     - UnityEditor.XR.ARCore.ARCoreSettings
     Unity.XR.ARCore.dll:
     - UnityEngine.XR.ARCore.ARCoreLoader
-    Unity.XR.ARFoundation.dll:
-    - UnityEngine.XR.ARFoundation.ARCameraBackground
-    - UnityEngine.XR.ARFoundation.ARCameraManager
-    - UnityEngine.XR.ARFoundation.ARInputManager
-    - UnityEngine.XR.ARFoundation.ARMeshManager
-    - UnityEngine.XR.ARFoundation.AROcclusionManager
-    - UnityEngine.XR.ARFoundation.ARPlaneManager
-    - UnityEngine.XR.ARFoundation.ARPoseDriver
-    - UnityEngine.XR.ARFoundation.ARSession
-    - UnityEngine.XR.ARFoundation.ARSessionOrigin
     Unity.XR.ARKit.Editor.dll:
     - UnityEditor.XR.ARKit.ARKitSettings
     Unity.XR.ARKit.dll:
@@ -38,16 +27,8 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
-    UnityEngine.UI.dll:
-    - UnityEngine.EventSystems.EventSystem
-    - UnityEngine.EventSystems.StandaloneInputModule
-    - UnityEngine.UI.Button
-    - UnityEngine.UI.CanvasScaler
-    - UnityEngine.UI.GraphicRaycaster
-    - UnityEngine.UI.Image
-    - UnityEngine.UI.Text
   sceneClasses:
-    Assets/App/OcclusionTest.unity:
+    Assets/App/Scenes/DelayTextureTest.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -66,69 +47,45 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 54
-      Script: {instanceID: 0}
     - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 84
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 14718}
-    - Class: 114
-      Script: {instanceID: 14728}
-    - Class: 114
-      Script: {instanceID: 14918}
-    - Class: 114
-      Script: {instanceID: 14958}
-    - Class: 114
-      Script: {instanceID: 15062}
-    - Class: 114
-      Script: {instanceID: 15144}
-    - Class: 114
-      Script: {instanceID: 15476}
-    - Class: 114
-      Script: {instanceID: 16072}
-    - Class: 114
-      Script: {instanceID: 16322}
-    - Class: 114
-      Script: {instanceID: 16528}
-    - Class: 114
-      Script: {instanceID: 16656}
-    - Class: 114
-      Script: {instanceID: 16686}
-    - Class: 114
-      Script: {instanceID: 16718}
-    - Class: 114
-      Script: {instanceID: 16830}
-    - Class: 114
-      Script: {instanceID: 16864}
-    - Class: 114
-      Script: {instanceID: 16878}
-    - Class: 114
-      Script: {instanceID: 17002}
-    - Class: 114
-      Script: {instanceID: 17124}
+      Script: {instanceID: 12362}
     - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 135
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: aeb62f729c52c814dec86c47dcac1471
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
+  - hash:
+      serializedVersion: 2
+      Hash: f84d945e5e1ca985698660fc26e9657f
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: RawImage
   - hash:
       serializedVersion: 2
       Hash: e8ceac66418c3a50187cea2659aa3dd7
@@ -231,12 +188,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: UnityEngine.XR.ARFoundation.Samples
     className: SessionReloader
-  - hash:
-      serializedVersion: 2
-      Hash: aeb62f729c52c814dec86c47dcac1471
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Text
   - hash:
       serializedVersion: 2
       Hash: 41f7090de639b848a963b2101164280e
@@ -629,6 +580,12 @@ ScriptsOnlyBuild:
     className: Tooltip
   - hash:
       serializedVersion: 2
+      Hash: f4d291b7051a19ae9972901030f694f6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DelayedCamera
+  - hash:
+      serializedVersion: 2
       Hash: 1e0a474cdfd029ce828f52ceb53cf79c
     assemblyName: Unity.XR.Interaction.Toolkit.dll
     namespaceName: UnityEngine.XR.Interaction.Toolkit
@@ -729,12 +686,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.Interaction.Toolkit.dll
     namespaceName: UnityEngine.XR.Interaction.Toolkit
     className: XRTintInteractableVisual
-  - hash:
-      serializedVersion: 2
-      Hash: f84d945e5e1ca985698660fc26e9657f
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: RawImage
   - hash:
       serializedVersion: 2
       Hash: 19da6c0d6a949df7b466ab77327de22d
@@ -1001,6 +952,12 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
+      Hash: 277ccbad3c84c8dca7f438a9d3bdd302
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PeopleOcclusionPostEffect
+  - hash:
+      serializedVersion: 2
       Hash: bce0c62fe984eaff6bf3555b7bcb4334
     assemblyName: Assembly-CSharp.dll
     namespaceName: UnityEngine.XR.ARFoundation.Samples
@@ -1259,5 +1216,5 @@ ScriptsOnlyBuild:
     className: Rotator
   platform: 2
   scenePathNames:
-  - Assets/App/OcclusionTest.unity
+  - Assets/App/Scenes/DelayTextureTest.unity
   playerPath: /Users/Nobuhiko/Documents/MyProjet/build/HumanSegmentation.app

@@ -146,27 +146,27 @@ static const int32_t s_InvokerIndices[40] =
 {
 	10,
 	658,
-	1808,
+	1758,
 	9,
 	10,
 	3,
 	3,
 	3,
 	3,
-	1809,
+	1759,
 	49,
 	3,
 	49,
 	25,
-	1725,
+	1675,
 	17,
-	1810,
+	1760,
 	17,
 	518,
 	518,
 	121,
 	518,
-	1811,
+	1761,
 	14,
 	3,
 	23,
@@ -174,8 +174,8 @@ static const int32_t s_InvokerIndices[40] =
 	23,
 	23,
 	23,
-	1419,
-	1420,
+	1406,
+	1407,
 	10,
 	10,
 	10,
@@ -185,6 +185,7 @@ static const int32_t s_InvokerIndices[40] =
 	-1,
 	32,
 };
+extern const Il2CppDebuggerMetadataRegistration g_DebuggerMetadataRegistrationUnity_XR_ARKit_FaceTracking;
 extern const Il2CppCodeGenModule g_Unity_XR_ARKit_FaceTrackingCodeGenModule;
 const Il2CppCodeGenModule g_Unity_XR_ARKit_FaceTrackingCodeGenModule = 
 {
@@ -198,5 +199,5 @@ const Il2CppCodeGenModule g_Unity_XR_ARKit_FaceTrackingCodeGenModule =
 	NULL,
 	0,
 	NULL,
-	NULL,
+	&g_DebuggerMetadataRegistrationUnity_XR_ARKit_FaceTracking,
 };

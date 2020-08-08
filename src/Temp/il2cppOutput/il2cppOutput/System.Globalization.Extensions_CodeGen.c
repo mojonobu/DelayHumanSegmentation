@@ -20,6 +20,7 @@ IL2CPP_EXTERN_C_END
 
 
 
+extern const Il2CppDebuggerMetadataRegistration g_DebuggerMetadataRegistrationSystem_Globalization_Extensions;
 extern const Il2CppCodeGenModule g_System_Globalization_ExtensionsCodeGenModule;
 const Il2CppCodeGenModule g_System_Globalization_ExtensionsCodeGenModule = 
 {
@@ -33,5 +34,5 @@ const Il2CppCodeGenModule g_System_Globalization_ExtensionsCodeGenModule =
 	NULL,
 	0,
 	NULL,
-	NULL,
+	&g_DebuggerMetadataRegistrationSystem_Globalization_Extensions,
 };

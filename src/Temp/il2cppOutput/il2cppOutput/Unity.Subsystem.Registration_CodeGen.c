@@ -34,6 +34,7 @@ static const int32_t s_InvokerIndices[2] =
 	109,
 	3,
 };
+extern const Il2CppDebuggerMetadataRegistration g_DebuggerMetadataRegistrationUnity_Subsystem_Registration;
 extern const Il2CppCodeGenModule g_Unity_Subsystem_RegistrationCodeGenModule;
 const Il2CppCodeGenModule g_Unity_Subsystem_RegistrationCodeGenModule = 
 {
@@ -47,5 +48,5 @@ const Il2CppCodeGenModule g_Unity_Subsystem_RegistrationCodeGenModule =
 	NULL,
 	0,
 	NULL,
-	NULL,
+	&g_DebuggerMetadataRegistrationUnity_Subsystem_Registration,
 };

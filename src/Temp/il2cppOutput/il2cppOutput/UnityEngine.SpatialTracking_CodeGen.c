@@ -151,15 +151,15 @@ static const int32_t s_InvokerIndices[38] =
 	52,
 	14,
 	26,
-	1574,
+	1562,
 	10,
 	32,
 	10,
 	32,
 	102,
 	31,
-	1323,
-	1404,
+	1313,
+	1391,
 	23,
 	23,
 	23,
@@ -169,15 +169,16 @@ static const int32_t s_InvokerIndices[38] =
 	23,
 	23,
 	23,
-	1575,
-	1167,
+	1563,
+	1165,
 	102,
 	23,
 	23,
-	1576,
-	761,
+	1564,
+	763,
 	23,
 };
+extern const Il2CppDebuggerMetadataRegistration g_DebuggerMetadataRegistrationUnityEngine_SpatialTracking;
 extern const Il2CppCodeGenModule g_UnityEngine_SpatialTrackingCodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_SpatialTrackingCodeGenModule = 
 {
@@ -191,5 +192,5 @@ const Il2CppCodeGenModule g_UnityEngine_SpatialTrackingCodeGenModule =
 	NULL,
 	0,
 	NULL,
-	NULL,
+	&g_DebuggerMetadataRegistrationUnityEngine_SpatialTracking,
 };

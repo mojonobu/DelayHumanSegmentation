@@ -68,7 +68,7 @@
                     float2 forMask = float2((1.0 - (_UVMultiplierPortrait * 0.5f)) + (v.uv.x / _UVMultiplierPortrait), v.uv.y);
                     o.uv2 = float2(lerp(1.0 - forMask.y, forMask.y, 0), lerp(forMask.x, 1.0 - forMask.x, 1));
                 }
-                o.uv3 = float2(v.uv.x, 1.0-v.uv.y);
+                o.uv3 = float2(1.0 - v.uv.x, v.uv.y);
                 
                 return o;
             }

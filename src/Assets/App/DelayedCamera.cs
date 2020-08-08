@@ -65,13 +65,15 @@ public class DelayedCamera : MonoBehaviour
     [SerializeField]
     private float delay = 0.5f;
 
+    [SerializeField]
+    private RenderTexture targetTexture;
     /// <summary>
     /// The size of the buffer containing the recorded images
     /// </summary>
     /// <remarks>
     /// Try to keep this value as low as possible according to the delay
     /// </remarks>
-    private int bufferSize = 256;
+    private int bufferSize = 128;
 
     /// <summary>
     /// The render texture used to record what the camera sees
@@ -103,7 +105,7 @@ public class DelayedCamera : MonoBehaviour
         frames = new Frame[bufferSize];
 
         // Change the depth value from 24 to 16 may improve performances. And try to specify an image format with better compression.
-        renderTexture = new RenderTexture( Screen.width, Screen.height, 24 );
+        renderTexture = new RenderTexture( Screen.width/10, Screen.height/10, 24 );
         renderCamera.targetTexture = renderTexture;
         StartCoroutine( Render() );
     }
@@ -128,7 +130,8 @@ public class DelayedCamera : MonoBehaviour
             // The foor loop is **voluntary** empty
             for ( ; frames[renderedFrameIndex].CapturedBefore( Time.time - delay ) ; renderedFrameIndex = ( renderedFrameIndex + 1 ) % bufferSize ) ;
 
-            Graphics.Blit( frames[renderedFrameIndex], null as RenderTexture );
+            Graphics.Blit( frames[renderedFrameIndex], targetTexture );
+            // yield return new WaitForSeconds(0.1f);
 
             frameIndex++;
         }

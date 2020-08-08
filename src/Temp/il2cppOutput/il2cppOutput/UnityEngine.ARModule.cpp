@@ -24,6 +24,17 @@ struct CharU5BU5D_t4CC6ABF0AD71BEC97E3C2F1E9C5677E46D3A75C2;
 // System.String
 struct String_t;
 
+IL2CPP_EXTERN_C Il2CppSequencePoint g_sequencePointsUnityEngine_ARModule[];
+IL2CPP_EXTERN_C const RuntimeMethod* PoseData_get_position_m356B0853C5A393D0748E95FCBEF3BFDA9AC46D9B_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PoseData_get_rotation_m8784EAC91FE13E8909E972A0AD9B9A9B9CAA2981_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* TangoInputTracking_TryGetPoseAtTime_m8AA6B8CEADE806F981A62E2928425265987F1C3F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeType* Boolean_tB53F6830F670160873277339AA58F15CAED4399C_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* PoseData_tF7272C7E3C2BAFC109D4E02AD34D38E9E24FE638_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720_0_0_0_var;
+IL2CPP_EXTERN_C const uint32_t PoseData_get_position_m356B0853C5A393D0748E95FCBEF3BFDA9AC46D9B_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t PoseData_get_rotation_m8784EAC91FE13E8909E972A0AD9B9A9B9CAA2981_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t TangoInputTracking_TryGetPoseAtTime_m8AA6B8CEADE806F981A62E2928425265987F1C3F_MetadataUsageId;
 
 
 IL2CPP_EXTERN_C_BEGIN
@@ -570,22 +581,37 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TangoInputTracking_Internal_TryGetPoseAt
 // UnityEngine.Quaternion UnityEngine.XR.Tango.PoseData::get_rotation()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  PoseData_get_rotation_m8784EAC91FE13E8909E972A0AD9B9A9B9CAA2981 (PoseData_tF7272C7E3C2BAFC109D4E02AD34D38E9E24FE638 * __this, const RuntimeMethod* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (PoseData_get_rotation_m8784EAC91FE13E8909E972A0AD9B9A9B9CAA2981_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
 	Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  V_0;
 	memset((&V_0), 0, sizeof(V_0));
+	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
+	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, PoseData_get_rotation_m8784EAC91FE13E8909E972A0AD9B9A9B9CAA2981_RuntimeMethod_var, methodExecutionContextThis, NULL, NULL);
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_ARModule + 0));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_ARModule + 1));
 	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_ARModule + 2));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_ARModule + 3));
 		double L_0 = __this->get_orientation_x_0();
 		double L_1 = __this->get_orientation_y_1();
 		double L_2 = __this->get_orientation_z_2();
 		double L_3 = __this->get_orientation_w_3();
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_ARModule + 5));
 		Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  L_4;
 		memset((&L_4), 0, sizeof(L_4));
 		Quaternion__ctor_m7502F0C38E04C6DE24C965D1CAF278DDD02B9D61((&L_4), (((float)((float)L_0))), (((float)((float)L_1))), (((float)((float)L_2))), (((float)((float)L_3))), /*hidden argument*/NULL);
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_ARModule + 5));
 		V_0 = L_4;
 		goto IL_0025;
 	}
 
 IL_0025:
 	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_ARModule + 4));
 		Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  L_5 = V_0;
 		return L_5;
 	}
@@ -599,21 +625,36 @@ IL2CPP_EXTERN_C  Quaternion_t319F3319A7D43FFA5D819AD6C0A98851F0095357  PoseData_
 // UnityEngine.Vector3 UnityEngine.XR.Tango.PoseData::get_position()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  PoseData_get_position_m356B0853C5A393D0748E95FCBEF3BFDA9AC46D9B (PoseData_tF7272C7E3C2BAFC109D4E02AD34D38E9E24FE638 * __this, const RuntimeMethod* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (PoseData_get_position_m356B0853C5A393D0748E95FCBEF3BFDA9AC46D9B_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
 	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  V_0;
 	memset((&V_0), 0, sizeof(V_0));
+	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
+	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, PoseData_get_position_m356B0853C5A393D0748E95FCBEF3BFDA9AC46D9B_RuntimeMethod_var, methodExecutionContextThis, NULL, NULL);
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_ARModule + 6));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_ARModule + 7));
 	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_ARModule + 8));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_ARModule + 9));
 		double L_0 = __this->get_translation_x_4();
 		double L_1 = __this->get_translation_y_5();
 		double L_2 = __this->get_translation_z_6();
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_ARModule + 11));
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_3;
 		memset((&L_3), 0, sizeof(L_3));
 		Vector3__ctor_m08F61F548AA5836D8789843ACB4A81E4963D2EE1((&L_3), (((float)((float)L_0))), (((float)((float)L_1))), (((float)((float)L_2))), /*hidden argument*/NULL);
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_ARModule + 11));
 		V_0 = L_3;
 		goto IL_001e;
 	}
 
 IL_001e:
 	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_ARModule + 10));
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_4 = V_0;
 		return L_4;
 	}
@@ -653,16 +694,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TangoInputTracking_Internal_TryGetPoseAt
 // System.Boolean UnityEngine.XR.Tango.TangoInputTracking::TryGetPoseAtTime(UnityEngine.XR.Tango.PoseData&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TangoInputTracking_TryGetPoseAtTime_m8AA6B8CEADE806F981A62E2928425265987F1C3F (PoseData_tF7272C7E3C2BAFC109D4E02AD34D38E9E24FE638 * ___pose0, const RuntimeMethod* method)
 {
-	bool V_0 = false;
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_method (TangoInputTracking_TryGetPoseAtTime_m8AA6B8CEADE806F981A62E2928425265987F1C3F_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___pose0));
+	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, TangoInputTracking_TryGetPoseAtTime_m8AA6B8CEADE806F981A62E2928425265987F1C3F_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_ARModule + 12));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_ARModule + 13));
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_ARModule + 14));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_ARModule + 15));
 		PoseData_tF7272C7E3C2BAFC109D4E02AD34D38E9E24FE638 * L_0 = ___pose0;
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_ARModule + 17));
 		bool L_1 = TangoInputTracking_Internal_TryGetPoseAtTime_m6324D495343239E4BBEDF51EB99B056BC4BB260F((PoseData_tF7272C7E3C2BAFC109D4E02AD34D38E9E24FE638 *)L_0, /*hidden argument*/NULL);
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_ARModule + 17));
 		V_0 = L_1;
 		goto IL_000a;
 	}
 
 IL_000a:
 	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_ARModule + 16));
 		bool L_2 = V_0;
 		return L_2;
 	}

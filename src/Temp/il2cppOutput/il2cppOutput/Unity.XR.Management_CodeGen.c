@@ -290,26 +290,27 @@ static const Il2CppTokenRangePair s_rgctxIndices[8] =
 };
 static const Il2CppRGCTXDefinition s_rgctxValues[19] = 
 {
-	{ (Il2CppRGCTXDataType)1, 14503 },
-	{ (Il2CppRGCTXDataType)2, 14503 },
-	{ (Il2CppRGCTXDataType)3, 12149 },
-	{ (Il2CppRGCTXDataType)2, 16481 },
-	{ (Il2CppRGCTXDataType)3, 12150 },
-	{ (Il2CppRGCTXDataType)2, 16482 },
-	{ (Il2CppRGCTXDataType)3, 12151 },
-	{ (Il2CppRGCTXDataType)2, 16483 },
-	{ (Il2CppRGCTXDataType)3, 12152 },
-	{ (Il2CppRGCTXDataType)3, 12153 },
-	{ (Il2CppRGCTXDataType)3, 12154 },
-	{ (Il2CppRGCTXDataType)3, 12155 },
-	{ (Il2CppRGCTXDataType)2, 14505 },
-	{ (Il2CppRGCTXDataType)1, 16484 },
-	{ (Il2CppRGCTXDataType)3, 12156 },
-	{ (Il2CppRGCTXDataType)2, 16485 },
-	{ (Il2CppRGCTXDataType)3, 12157 },
-	{ (Il2CppRGCTXDataType)3, 12158 },
-	{ (Il2CppRGCTXDataType)2, 14512 },
+	{ (Il2CppRGCTXDataType)1, 14457 },
+	{ (Il2CppRGCTXDataType)2, 14457 },
+	{ (Il2CppRGCTXDataType)3, 11805 },
+	{ (Il2CppRGCTXDataType)2, 201 },
+	{ (Il2CppRGCTXDataType)3, 11806 },
+	{ (Il2CppRGCTXDataType)2, 202 },
+	{ (Il2CppRGCTXDataType)3, 11807 },
+	{ (Il2CppRGCTXDataType)2, 203 },
+	{ (Il2CppRGCTXDataType)3, 11808 },
+	{ (Il2CppRGCTXDataType)3, 11809 },
+	{ (Il2CppRGCTXDataType)3, 11810 },
+	{ (Il2CppRGCTXDataType)3, 11811 },
+	{ (Il2CppRGCTXDataType)2, 204 },
+	{ (Il2CppRGCTXDataType)1, 16143 },
+	{ (Il2CppRGCTXDataType)3, 11812 },
+	{ (Il2CppRGCTXDataType)2, 16144 },
+	{ (Il2CppRGCTXDataType)3, 11813 },
+	{ (Il2CppRGCTXDataType)3, 11814 },
+	{ (Il2CppRGCTXDataType)2, 14465 },
 };
+extern const Il2CppDebuggerMetadataRegistration g_DebuggerMetadataRegistrationUnity_XR_Management;
 extern const Il2CppCodeGenModule g_Unity_XR_ManagementCodeGenModule;
 const Il2CppCodeGenModule g_Unity_XR_ManagementCodeGenModule = 
 {
@@ -323,5 +324,5 @@ const Il2CppCodeGenModule g_Unity_XR_ManagementCodeGenModule =
 	s_rgctxIndices,
 	19,
 	s_rgctxValues,
-	NULL,
+	&g_DebuggerMetadataRegistrationUnity_XR_Management,
 };

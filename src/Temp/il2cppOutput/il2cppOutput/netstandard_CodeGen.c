@@ -20,6 +20,7 @@ IL2CPP_EXTERN_C_END
 
 
 
+extern const Il2CppDebuggerMetadataRegistration g_DebuggerMetadataRegistrationnetstandard;
 extern const Il2CppCodeGenModule g_netstandardCodeGenModule;
 const Il2CppCodeGenModule g_netstandardCodeGenModule = 
 {
@@ -33,5 +34,5 @@ const Il2CppCodeGenModule g_netstandardCodeGenModule =
 	NULL,
 	0,
 	NULL,
-	NULL,
+	&g_DebuggerMetadataRegistrationnetstandard,
 };
