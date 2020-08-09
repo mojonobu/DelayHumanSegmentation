@@ -311,9 +311,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6be4fcd693786498ab018a8b8b36389b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  renderCamera: {fileID: 1575547159}
   delay: 0.5
-  targetTexture: {fileID: 8400000, guid: 2b26a8a0b66a644829699ba34bb52794, type: 2}
+  postEffect: {fileID: 0}
 --- !u!1 &1076523646
 GameObject:
   m_ObjectHideFlags: 0

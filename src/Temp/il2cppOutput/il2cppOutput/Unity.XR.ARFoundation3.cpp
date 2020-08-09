@@ -8057,7 +8057,7 @@ IL_002a:
 		Texture2D_tBBF96AC337723E2EF156DF17E09D4379FD05DE1C * L_7 = ___texture1;
 		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnity_XR_ARFoundation + 8951));
 		NullCheck(L_7);
-		bool L_8 = VirtFuncInvoker0< bool >::Invoke(8 /* System.Boolean UnityEngine.Texture::get_isReadable() */, L_7);
+		bool L_8 = VirtFuncInvoker0< bool >::Invoke(9 /* System.Boolean UnityEngine.Texture::get_isReadable() */, L_7);
 		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnity_XR_ARFoundation + 8951));
 		V_3 = (bool)((((int32_t)L_8) == ((int32_t)0))? 1 : 0);
 		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnity_XR_ARFoundation + 8929));

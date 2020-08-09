@@ -27,13 +27,13 @@ public class PeopleOcclusionPostEffect : MonoBehaviour
         m_material = new Material(m_peopleOcclusionShader);
         GetComponent<Camera>().depthTextureMode |= DepthTextureMode.Depth;
 
-        RenderTextureDescriptor descriptor = new RenderTextureDescriptor();
-        descriptor.dimension = TextureDimension.Any;
-        descriptor.width = Screen.width/10;
-        descriptor.height = Screen.height/10;
-        descriptor.depthBufferBits = 24;
-        descriptor.graphicsFormat = GraphicsFormat.R8G8B8A8_UNorm;
-        Debug.Log("descriptor :" + descriptor.ToString());
+        // RenderTextureDescriptor descriptor = new RenderTextureDescriptor();
+        // descriptor.dimension = TextureDimension.Any;
+        // descriptor.width = Screen.width/10;
+        // descriptor.height = Screen.height/10;
+        // descriptor.depthBufferBits = 24;
+        // descriptor.graphicsFormat = GraphicsFormat.R8G8B8A8_UNorm;
+        // Debug.Log("descriptor :" + descriptor.ToString());
         // {
         //     dimension =  TextureDimension.Any,
         //     width = Screen.width/10,
@@ -42,7 +42,7 @@ public class PeopleOcclusionPostEffect : MonoBehaviour
         //     graphicsFormat = GraphicsFormat.R8G8B8A8_UNorm
         // };
 
-        handTexture = new RenderTexture(descriptor);
+        // handTexture = new RenderTexture(Screen.width/10, Screen.height/10,24);
     }
 
     private void OnEnable()
@@ -57,9 +57,9 @@ public class PeopleOcclusionPostEffect : MonoBehaviour
 
     void OnRenderImage(RenderTexture source, RenderTexture destination)
     {
-        Debug.Log("source :" + source.descriptor.ToString());
-        Debug.Log("dest :" + destination.descriptor.ToString());
-        Debug.Log("hand :" + handTexture.descriptor.ToString());
+        Debug.Log("source :" + source.dimension.ToString());
+        // Debug.Log("dest :" + destination.dimension.ToString());
+        Debug.Log("hand :" + handTexture.dimension.ToString());
 
         if (PeopleOcclusionSupported())
         {
