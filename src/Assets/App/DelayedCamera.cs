@@ -56,8 +56,8 @@ public class DelayedCamera : MonoBehaviour
     /// <summary>
     /// The camera used to capture the frames
     /// </summary>
-    [SerializeField]
-    private Camera renderCamera;
+    // [SerializeField]
+    // private Camera renderCamera;
 
     /// <summary>
     /// The delay
@@ -65,8 +65,7 @@ public class DelayedCamera : MonoBehaviour
     [SerializeField]
     private float delay = 0.5f;
 
-    [SerializeField]
-    private RenderTexture targetTexture;
+    private RenderTexture sourceTexture;
     /// <summary>
     /// The size of the buffer containing the recorded images
     /// </summary>
@@ -100,14 +99,16 @@ public class DelayedCamera : MonoBehaviour
     /// </summary>
     private int frameIndex;
 
+    public PeopleOcclusionPostEffect postEffect;
     private void Awake()
     {
         frames = new Frame[bufferSize];
 
         // Change the depth value from 24 to 16 may improve performances. And try to specify an image format with better compression.
-        renderTexture = new RenderTexture( Screen.width/10, Screen.height/10, 24 );
-        renderCamera.targetTexture = renderTexture;
+        // renderTexture = new RenderTexture( Screen.width/10, Screen.height/10, 24 );
+        // renderCamera.targetTexture = renderTexture;
         StartCoroutine( Render() );
+        sourceTexture = postEffect.handTexture;
     }
 
     /// <summary>
@@ -124,13 +125,13 @@ public class DelayedCamera : MonoBehaviour
 
             capturedFrameIndex = frameIndex % bufferSize;
 
-            frames[capturedFrameIndex].CaptureFrom( renderTexture );
+            frames[capturedFrameIndex].CaptureFrom( sourceTexture );
 
             // Find the index of the frame to render
             // The foor loop is **voluntary** empty
             for ( ; frames[renderedFrameIndex].CapturedBefore( Time.time - delay ) ; renderedFrameIndex = ( renderedFrameIndex + 1 ) % bufferSize ) ;
 
-            Graphics.Blit( frames[renderedFrameIndex], targetTexture );
+            Graphics.Blit( frames[renderedFrameIndex], null as RenderTexture );
             // yield return new WaitForSeconds(0.1f);
 
             frameIndex++;

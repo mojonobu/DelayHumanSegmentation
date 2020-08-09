@@ -1166,6 +1166,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* InternalStringComparer_IndexOf_m73D41BA1F05
 IL2CPP_EXTERN_C const RuntimeMethod* InternalStringComparer__ctor_m471FF151AF831B76635ED96C53CF08114FD42C83_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* IntrospectiveSortUtilities_FloorLog2_m5D97E3CA34AA9D368A470CB423154AFEF979BFFA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* IntrospectiveSortUtilities_ThrowOrIgnoreBadComparer_mC5A16A109D5D25128EC4877C34B328EAB6567C3A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* KeyNotFoundException__ctor_m62266FD7195B82ED3C3005991CDDA4C0C655F48C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* KeyNotFoundException__ctor_m7B2F987D196533CC4321C1EE5919F10A15862C89_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* KeyNotFoundException__ctor_m9D84ADA7AF7ECBA5A71B6744811F7B2152CF821C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* KeyNotFoundException__ctor_mE9E1C6E6E21842095342C0A2ED65EC201FB4F3C8_RuntimeMethod_var;
@@ -1666,6 +1667,7 @@ IL2CPP_EXTERN_C const uint32_t InternalStringComparer_IndexOf_m73D41BA1F05F93788
 IL2CPP_EXTERN_C const uint32_t InternalStringComparer__ctor_m471FF151AF831B76635ED96C53CF08114FD42C83_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t IntrospectiveSortUtilities_FloorLog2_m5D97E3CA34AA9D368A470CB423154AFEF979BFFA_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t IntrospectiveSortUtilities_ThrowOrIgnoreBadComparer_mC5A16A109D5D25128EC4877C34B328EAB6567C3A_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t KeyNotFoundException__ctor_m62266FD7195B82ED3C3005991CDDA4C0C655F48C_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t KeyNotFoundException__ctor_m7B2F987D196533CC4321C1EE5919F10A15862C89_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t KeyNotFoundException__ctor_m9D84ADA7AF7ECBA5A71B6744811F7B2152CF821C_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t KeyNotFoundException__ctor_mE9E1C6E6E21842095342C0A2ED65EC201FB4F3C8_MetadataUsageId;
@@ -30544,6 +30546,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyNotFoundException__ctor_m9D84ADA7AF7E
 	{
 		String_t* L_0 = ___message0;
 		SystemException__ctor_mF67B7FA639B457BDFB2103D7C21C8059E806175A(__this, L_0, /*hidden argument*/NULL);
+		Exception_SetErrorCode_m742C1E687C82E56F445893685007EF4FC017F4A7(__this, ((int32_t)-2146232969), /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void System.Collections.Generic.KeyNotFoundException::.ctor(System.String,System.Exception)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyNotFoundException__ctor_m62266FD7195B82ED3C3005991CDDA4C0C655F48C (KeyNotFoundException_tC28F8B9E114291001A5D135723673C6F292438E2 * __this, String_t* ___message0, Exception_t * ___innerException1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (KeyNotFoundException__ctor_m62266FD7195B82ED3C3005991CDDA4C0C655F48C_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, KeyNotFoundException__ctor_m62266FD7195B82ED3C3005991CDDA4C0C655F48C_RuntimeMethod_var, NULL, NULL, NULL);
+	CHECK_PAUSE_POINT;
+	{
+		String_t* L_0 = ___message0;
+		Exception_t * L_1 = ___innerException1;
+		SystemException__ctor_mA18D2EA5642C066F35CB8C965398F9A542C33B0A(__this, L_0, L_1, /*hidden argument*/NULL);
 		Exception_SetErrorCode_m742C1E687C82E56F445893685007EF4FC017F4A7(__this, ((int32_t)-2146232969), /*hidden argument*/NULL);
 		return;
 	}

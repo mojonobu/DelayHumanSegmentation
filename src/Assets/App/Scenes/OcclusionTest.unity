@@ -540,6 +540,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1061950103}
+  - component: {fileID: 1061950102}
   m_Layer: 0
   m_Name: Delay
   m_TagString: Untagged
@@ -547,6 +548,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1061950102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061950101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6be4fcd693786498ab018a8b8b36389b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0.5
+  postEffect: {fileID: 2127115565}
 --- !u!4 &1061950103
 Transform:
   m_ObjectHideFlags: 0
@@ -878,7 +893,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HumanSegmentationStencilMode: 3
   m_HumanSegmentationDepthMode: 2
-  m_EnvironmentDepthMode: 0
+  m_EnvironmentDepthMode: 2
   m_OcclusionPreferenceMode: 0
 --- !u!114 &2127115565
 MonoBehaviour:
@@ -897,3 +912,4 @@ MonoBehaviour:
   m_cameraManager: {fileID: 2127115560}
   m_peopleOcclusionShader: {fileID: 4800000, guid: 9eea7d330208e42dd9735178ededd1ce,
     type: 3}
+  handTexture: {fileID: 0}

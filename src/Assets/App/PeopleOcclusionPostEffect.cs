@@ -1,4 +1,7 @@
 ﻿using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.Experimental.Rendering;
+
 using System;
 using Unity.Collections;
 using Unity.Collections.LowLevel.Unsafe;
@@ -17,10 +20,29 @@ public class PeopleOcclusionPostEffect : MonoBehaviour
     private Texture2D m_cameraFeedTexture = null;
     private Material m_material = null;
 
+    [SerializeField]
+    public RenderTexture handTexture;
     void Awake()
     {
         m_material = new Material(m_peopleOcclusionShader);
         GetComponent<Camera>().depthTextureMode |= DepthTextureMode.Depth;
+
+        RenderTextureDescriptor descriptor = new RenderTextureDescriptor();
+        descriptor.dimension = TextureDimension.Any;
+        descriptor.width = Screen.width/10;
+        descriptor.height = Screen.height/10;
+        descriptor.depthBufferBits = 24;
+        descriptor.graphicsFormat = GraphicsFormat.R8G8B8A8_UNorm;
+        Debug.Log("descriptor :" + descriptor.ToString());
+        // {
+        //     dimension =  TextureDimension.Any,
+        //     width = Screen.width/10,
+        //     height = Screen.height/10,
+        //     depthBufferBits = 24,
+        //     graphicsFormat = GraphicsFormat.R8G8B8A8_UNorm
+        // };
+
+        handTexture = new RenderTexture(descriptor);
     }
 
     private void OnEnable()
@@ -35,6 +57,10 @@ public class PeopleOcclusionPostEffect : MonoBehaviour
 
     void OnRenderImage(RenderTexture source, RenderTexture destination)
     {
+        Debug.Log("source :" + source.descriptor.ToString());
+        Debug.Log("dest :" + destination.descriptor.ToString());
+        Debug.Log("hand :" + handTexture.descriptor.ToString());
+
         if (PeopleOcclusionSupported())
         {
             if (m_cameraFeedTexture != null)
@@ -67,12 +93,12 @@ public class PeopleOcclusionPostEffect : MonoBehaviour
             //m_material.SetFloat("_ARWorldScale", 1f/m_arOrigin.transform.localScale.x);
 
             // StartCoroutine(DelayRendering(source, destination, m_material));
-            Graphics.Blit(source, destination, m_material);
+            Graphics.Blit(source, handTexture, m_material);
         }
         else
         {
             // StartCoroutine(DelayRendering(source, destination, null));
-            Graphics.Blit(source, destination);
+            Graphics.Blit(source, handTexture);
         }
     }
 
