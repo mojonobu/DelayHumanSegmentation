@@ -65,6 +65,7 @@ public class DelayedCamera : MonoBehaviour
     [SerializeField]
     private float delay = 0.5f;
 
+    [SerializeField]
     private RenderTexture sourceTexture;
     /// <summary>
     /// The size of the buffer containing the recorded images
@@ -99,7 +100,6 @@ public class DelayedCamera : MonoBehaviour
     /// </summary>
     private int frameIndex;
 
-    public PeopleOcclusionPostEffect postEffect;
     private void Awake()
     {
         frames = new Frame[bufferSize];
@@ -108,7 +108,6 @@ public class DelayedCamera : MonoBehaviour
         // renderTexture = new RenderTexture( Screen.width/10, Screen.height/10, 24 );
         // renderCamera.targetTexture = renderTexture;
         StartCoroutine( Render() );
-        sourceTexture = postEffect.handTexture;
     }
 
     public RenderTexture delayedBodyTexture;
@@ -126,7 +125,11 @@ public class DelayedCamera : MonoBehaviour
 
             capturedFrameIndex = frameIndex % bufferSize;
 
+            if(sourceTexture == null){
+                continue;
+            }
             frames[capturedFrameIndex].CaptureFrom( sourceTexture );
+            
 
             // Find the index of the frame to render
             // The foor loop is **voluntary** empty

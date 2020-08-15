@@ -561,7 +561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0.5
-  postEffect: {fileID: 2127115565}
+  sourceTexture: {fileID: 8400000, guid: 2b26a8a0b66a644829699ba34bb52794, type: 2}
   delayedBodyTexture: {fileID: 8400000, guid: 37d02ea51ae8045878326c2d06b031e6, type: 2}
 --- !u!4 &1061950103
 Transform:

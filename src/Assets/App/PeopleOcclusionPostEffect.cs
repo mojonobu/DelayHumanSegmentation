@@ -90,7 +90,13 @@ public class PeopleOcclusionPostEffect : MonoBehaviour
             //m_material.SetFloat("_ARWorldScale", 1f/m_arOrigin.transform.localScale.x);
 
             // StartCoroutine(DelayRendering(source, destination, m_material));
-            Graphics.Blit(source, null as RenderTexture);
+            if(destination == null){
+                Debug.Log("destination is null!!");
+            } else {
+                Debug.Log(destination.name);
+
+            }
+            Graphics.Blit(source, null as RenderTexture, m_material);
 
             Graphics.Blit(source, handTexture, m_material);
         }
