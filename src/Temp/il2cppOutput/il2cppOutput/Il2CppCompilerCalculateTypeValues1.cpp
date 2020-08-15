@@ -24407,12 +24407,16 @@ public:
 	ARCameraManager_tCA7C4E3CE79EB88A8AA6D14B4D8F2FA991CBAA5A * ___m_cameraManager_6;
 	// UnityEngine.Shader PeopleOcclusionPostEffect::m_peopleOcclusionShader
 	Shader_tE2731FF351B74AB4186897484FB01E000C1160CA * ___m_peopleOcclusionShader_7;
+	// UnityEngine.Shader PeopleOcclusionPostEffect::m_peopleOcclusionShader_fullRendering
+	Shader_tE2731FF351B74AB4186897484FB01E000C1160CA * ___m_peopleOcclusionShader_fullRendering_8;
 	// UnityEngine.Texture2D PeopleOcclusionPostEffect::m_cameraFeedTexture
-	Texture2D_tBBF96AC337723E2EF156DF17E09D4379FD05DE1C * ___m_cameraFeedTexture_8;
+	Texture2D_tBBF96AC337723E2EF156DF17E09D4379FD05DE1C * ___m_cameraFeedTexture_9;
 	// UnityEngine.Material PeopleOcclusionPostEffect::m_material
-	Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * ___m_material_9;
+	Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * ___m_material_10;
+	// UnityEngine.Material PeopleOcclusionPostEffect::m_materialFull
+	Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * ___m_materialFull_11;
 	// UnityEngine.RenderTexture PeopleOcclusionPostEffect::handTexture
-	RenderTexture_tBC47D853E3DA6511CD6C49DBF78D47B890FCD2F6 * ___handTexture_10;
+	RenderTexture_tBC47D853E3DA6511CD6C49DBF78D47B890FCD2F6 * ___handTexture_12;
 
 public:
 	inline static int32_t get_offset_of_m_arOrigin_4() { return static_cast<int32_t>(offsetof(PeopleOcclusionPostEffect_tBF0D7A21F376FC1BB9A24CAA7B15D05DCB6A6B2D, ___m_arOrigin_4)); }
@@ -24451,31 +24455,49 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___m_peopleOcclusionShader_7), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_m_cameraFeedTexture_8() { return static_cast<int32_t>(offsetof(PeopleOcclusionPostEffect_tBF0D7A21F376FC1BB9A24CAA7B15D05DCB6A6B2D, ___m_cameraFeedTexture_8)); }
-	inline Texture2D_tBBF96AC337723E2EF156DF17E09D4379FD05DE1C * get_m_cameraFeedTexture_8() const { return ___m_cameraFeedTexture_8; }
-	inline Texture2D_tBBF96AC337723E2EF156DF17E09D4379FD05DE1C ** get_address_of_m_cameraFeedTexture_8() { return &___m_cameraFeedTexture_8; }
-	inline void set_m_cameraFeedTexture_8(Texture2D_tBBF96AC337723E2EF156DF17E09D4379FD05DE1C * value)
+	inline static int32_t get_offset_of_m_peopleOcclusionShader_fullRendering_8() { return static_cast<int32_t>(offsetof(PeopleOcclusionPostEffect_tBF0D7A21F376FC1BB9A24CAA7B15D05DCB6A6B2D, ___m_peopleOcclusionShader_fullRendering_8)); }
+	inline Shader_tE2731FF351B74AB4186897484FB01E000C1160CA * get_m_peopleOcclusionShader_fullRendering_8() const { return ___m_peopleOcclusionShader_fullRendering_8; }
+	inline Shader_tE2731FF351B74AB4186897484FB01E000C1160CA ** get_address_of_m_peopleOcclusionShader_fullRendering_8() { return &___m_peopleOcclusionShader_fullRendering_8; }
+	inline void set_m_peopleOcclusionShader_fullRendering_8(Shader_tE2731FF351B74AB4186897484FB01E000C1160CA * value)
 	{
-		___m_cameraFeedTexture_8 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___m_cameraFeedTexture_8), (void*)value);
+		___m_peopleOcclusionShader_fullRendering_8 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___m_peopleOcclusionShader_fullRendering_8), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_m_material_9() { return static_cast<int32_t>(offsetof(PeopleOcclusionPostEffect_tBF0D7A21F376FC1BB9A24CAA7B15D05DCB6A6B2D, ___m_material_9)); }
-	inline Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * get_m_material_9() const { return ___m_material_9; }
-	inline Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 ** get_address_of_m_material_9() { return &___m_material_9; }
-	inline void set_m_material_9(Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * value)
+	inline static int32_t get_offset_of_m_cameraFeedTexture_9() { return static_cast<int32_t>(offsetof(PeopleOcclusionPostEffect_tBF0D7A21F376FC1BB9A24CAA7B15D05DCB6A6B2D, ___m_cameraFeedTexture_9)); }
+	inline Texture2D_tBBF96AC337723E2EF156DF17E09D4379FD05DE1C * get_m_cameraFeedTexture_9() const { return ___m_cameraFeedTexture_9; }
+	inline Texture2D_tBBF96AC337723E2EF156DF17E09D4379FD05DE1C ** get_address_of_m_cameraFeedTexture_9() { return &___m_cameraFeedTexture_9; }
+	inline void set_m_cameraFeedTexture_9(Texture2D_tBBF96AC337723E2EF156DF17E09D4379FD05DE1C * value)
 	{
-		___m_material_9 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___m_material_9), (void*)value);
+		___m_cameraFeedTexture_9 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___m_cameraFeedTexture_9), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_handTexture_10() { return static_cast<int32_t>(offsetof(PeopleOcclusionPostEffect_tBF0D7A21F376FC1BB9A24CAA7B15D05DCB6A6B2D, ___handTexture_10)); }
-	inline RenderTexture_tBC47D853E3DA6511CD6C49DBF78D47B890FCD2F6 * get_handTexture_10() const { return ___handTexture_10; }
-	inline RenderTexture_tBC47D853E3DA6511CD6C49DBF78D47B890FCD2F6 ** get_address_of_handTexture_10() { return &___handTexture_10; }
-	inline void set_handTexture_10(RenderTexture_tBC47D853E3DA6511CD6C49DBF78D47B890FCD2F6 * value)
+	inline static int32_t get_offset_of_m_material_10() { return static_cast<int32_t>(offsetof(PeopleOcclusionPostEffect_tBF0D7A21F376FC1BB9A24CAA7B15D05DCB6A6B2D, ___m_material_10)); }
+	inline Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * get_m_material_10() const { return ___m_material_10; }
+	inline Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 ** get_address_of_m_material_10() { return &___m_material_10; }
+	inline void set_m_material_10(Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * value)
 	{
-		___handTexture_10 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___handTexture_10), (void*)value);
+		___m_material_10 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___m_material_10), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_m_materialFull_11() { return static_cast<int32_t>(offsetof(PeopleOcclusionPostEffect_tBF0D7A21F376FC1BB9A24CAA7B15D05DCB6A6B2D, ___m_materialFull_11)); }
+	inline Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * get_m_materialFull_11() const { return ___m_materialFull_11; }
+	inline Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 ** get_address_of_m_materialFull_11() { return &___m_materialFull_11; }
+	inline void set_m_materialFull_11(Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * value)
+	{
+		___m_materialFull_11 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___m_materialFull_11), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_handTexture_12() { return static_cast<int32_t>(offsetof(PeopleOcclusionPostEffect_tBF0D7A21F376FC1BB9A24CAA7B15D05DCB6A6B2D, ___handTexture_12)); }
+	inline RenderTexture_tBC47D853E3DA6511CD6C49DBF78D47B890FCD2F6 * get_handTexture_12() const { return ___handTexture_12; }
+	inline RenderTexture_tBC47D853E3DA6511CD6C49DBF78D47B890FCD2F6 ** get_address_of_handTexture_12() { return &___handTexture_12; }
+	inline void set_handTexture_12(RenderTexture_tBC47D853E3DA6511CD6C49DBF78D47B890FCD2F6 * value)
+	{
+		___handTexture_12 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___handTexture_12), (void*)value);
 	}
 };
 
@@ -40887,15 +40909,17 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2752[4] =
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2753;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize2753 = { sizeof (PeopleOcclusionPostEffect_tBF0D7A21F376FC1BB9A24CAA7B15D05DCB6A6B2D), -1, 0, 0 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2753[7] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2753[9] = 
 {
 	PeopleOcclusionPostEffect_tBF0D7A21F376FC1BB9A24CAA7B15D05DCB6A6B2D::get_offset_of_m_arOrigin_4(),
 	PeopleOcclusionPostEffect_tBF0D7A21F376FC1BB9A24CAA7B15D05DCB6A6B2D::get_offset_of_m_arOcclusionManager_5(),
 	PeopleOcclusionPostEffect_tBF0D7A21F376FC1BB9A24CAA7B15D05DCB6A6B2D::get_offset_of_m_cameraManager_6(),
 	PeopleOcclusionPostEffect_tBF0D7A21F376FC1BB9A24CAA7B15D05DCB6A6B2D::get_offset_of_m_peopleOcclusionShader_7(),
-	PeopleOcclusionPostEffect_tBF0D7A21F376FC1BB9A24CAA7B15D05DCB6A6B2D::get_offset_of_m_cameraFeedTexture_8(),
-	PeopleOcclusionPostEffect_tBF0D7A21F376FC1BB9A24CAA7B15D05DCB6A6B2D::get_offset_of_m_material_9(),
-	PeopleOcclusionPostEffect_tBF0D7A21F376FC1BB9A24CAA7B15D05DCB6A6B2D::get_offset_of_handTexture_10(),
+	PeopleOcclusionPostEffect_tBF0D7A21F376FC1BB9A24CAA7B15D05DCB6A6B2D::get_offset_of_m_peopleOcclusionShader_fullRendering_8(),
+	PeopleOcclusionPostEffect_tBF0D7A21F376FC1BB9A24CAA7B15D05DCB6A6B2D::get_offset_of_m_cameraFeedTexture_9(),
+	PeopleOcclusionPostEffect_tBF0D7A21F376FC1BB9A24CAA7B15D05DCB6A6B2D::get_offset_of_m_material_10(),
+	PeopleOcclusionPostEffect_tBF0D7A21F376FC1BB9A24CAA7B15D05DCB6A6B2D::get_offset_of_m_materialFull_11(),
+	PeopleOcclusionPostEffect_tBF0D7A21F376FC1BB9A24CAA7B15D05DCB6A6B2D::get_offset_of_handTexture_12(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2754;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize2754 = { sizeof (SwitchPointCloudVisualizationMode_tA805D22F3E24F0B45E2152B02B536A51B28C6F85), -1, 0, 0 };

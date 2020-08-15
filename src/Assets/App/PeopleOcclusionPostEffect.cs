@@ -16,15 +16,21 @@ public class PeopleOcclusionPostEffect : MonoBehaviour
     [SerializeField] private AROcclusionManager m_arOcclusionManager = null;
     [SerializeField] private ARCameraManager m_cameraManager = null;
     [SerializeField] private Shader m_peopleOcclusionShader = null;
+    [SerializeField] private Shader m_peopleOcclusionShader_fullRendering = null;
+
 
     private Texture2D m_cameraFeedTexture = null;
     private Material m_material = null;
+    private Material m_materialFull = null;
+
 
     [SerializeField]
     public RenderTexture handTexture;
     void Awake()
     {
         m_material = new Material(m_peopleOcclusionShader);
+        m_materialFull = new Material(m_peopleOcclusionShader_fullRendering);
+
         GetComponent<Camera>().depthTextureMode |= DepthTextureMode.Depth;
 
         // RenderTextureDescriptor descriptor = new RenderTextureDescriptor();
@@ -65,38 +71,44 @@ public class PeopleOcclusionPostEffect : MonoBehaviour
                 //m_material.SetFloat("_UVMultiplier", CalculateUVMultiplier(m_cameraFeedTexture));
                 m_material.SetFloat("_UVMultiplierLandScape", CalculateUVMultiplierLandScape(m_cameraFeedTexture));
                 m_material.SetFloat("_UVMultiplierPortrait", CalculateUVMultiplierPortrait(m_cameraFeedTexture));
+
+                m_materialFull.SetFloat("_UVMultiplierLandScape", CalculateUVMultiplierLandScape(m_cameraFeedTexture));
+                m_materialFull.SetFloat("_UVMultiplierPortrait", CalculateUVMultiplierPortrait(m_cameraFeedTexture));
             }
 
             if (Input.deviceOrientation == DeviceOrientation.LandscapeRight)
             {
                 m_material.SetFloat("_UVFlip", 0);
                 m_material.SetInt("_ONWIDE", 1);
+                m_materialFull.SetFloat("_UVFlip", 0);
+                m_materialFull.SetInt("_ONWIDE", 1);
             }
             else if (Input.deviceOrientation == DeviceOrientation.LandscapeLeft)
             {
                 m_material.SetFloat("_UVFlip", 1);
                 m_material.SetInt("_ONWIDE", 1);
+                m_materialFull.SetFloat("_UVFlip", 1);
+                m_materialFull.SetInt("_ONWIDE", 1);
             }
             else
             {
                 m_material.SetInt("_ONWIDE", 0);
+                m_materialFull.SetInt("_ONWIDE", 0);
             }
 
             //m_material.SetFloat("_UVFlip", Input.deviceOrientation == DeviceOrientation.LandscapeRight ? 0.0f : 1.0f);
 
             m_material.SetTexture("_OcclusionDepth", m_arOcclusionManager.humanDepthTexture);
             m_material.SetTexture("_OcclusionStencil", m_arOcclusionManager.humanStencilTexture);
+            m_materialFull.SetTexture("_OcclusionDepth", m_arOcclusionManager.humanDepthTexture);
+            m_materialFull.SetTexture("_OcclusionStencil", m_arOcclusionManager.humanStencilTexture);
 
             //m_material.SetFloat("_ARWorldScale", 1f/m_arOrigin.transform.localScale.x);
 
             // StartCoroutine(DelayRendering(source, destination, m_material));
-            if(destination == null){
-                Debug.Log("destination is null!!");
-            } else {
-                Debug.Log(destination.name);
 
-            }
-            Graphics.Blit(source, null as RenderTexture, m_material);
+            
+            Graphics.Blit(source, null as RenderTexture, m_materialFull);
 
             Graphics.Blit(source, handTexture, m_material);
         }
@@ -161,6 +173,8 @@ public class PeopleOcclusionPostEffect : MonoBehaviour
 
         m_cameraFeedTexture.Apply();
         m_material.SetTexture("_CameraFeed", m_cameraFeedTexture);
+        m_materialFull.SetTexture("_CameraFeed", m_cameraFeedTexture);
+
     }
 
     /*

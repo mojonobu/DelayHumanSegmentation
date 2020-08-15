@@ -75,7 +75,9 @@
  
             fixed4 frag (v2f i) : SV_Target
             {
+                // colが透過素材であって欲しい
                 fixed4 col = tex2D(_MainTex, i.uv);
+                col.a = 0;
                 // fixed4 cameraFeedCol = tex2D(_CameraFeed, i.uv1);
                 fixed4 cameraFeedCol = tex2D(_CameraFeed, i.uv);
 
@@ -89,6 +91,8 @@
 
                 float showOccluder = step(occlusionDepth, sceneDepth) * stencilCol.r; // 1 if (depth >= ocluderDepth && stencil)
  
+//  showOccluder = 1：人が検知されていて、オブジェクトの手前にいる
+// showOccluder = 0：人が検知されていない、もしくはオブジェクトの後方にいる
                 return lerp(col, cameraFeedCol, showOccluder);
             }
  

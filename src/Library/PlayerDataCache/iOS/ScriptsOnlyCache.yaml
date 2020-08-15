@@ -1024,7 +1024,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 6c52aa8595f317aa44f2db8bd29a4f56
+      Hash: 3e9d5f085c30f105c86496545b6bf06d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PeopleOcclusionPostEffect
