@@ -31,6 +31,8 @@
     </dict>
     <key>NSCameraUsageDescription</key>
     <string>Camera required for AR</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Microphone required for Delay</string>
     <key>UILaunchStoryboardName</key>
     <string>LaunchScreen-iPhone</string>
     <key>UILaunchStoryboardName~ipad</key>

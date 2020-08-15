@@ -5,12 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/App/Scenes/OcclusionTest.unity
     guid: e77b4ed7924f244908e8cd080545b97a
   - enabled: 0
     path: Assets/App/Scenes/DelayTextureTest.unity
     guid: 5dc22a24e5a2c41cbab7410398a38afb
+  - enabled: 1
+    path: Assets/App/Scenes/AudioTest.unity
+    guid: fca99077953124bbc93ee70d994f9996
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: f8ce26fe3bc69499b9be4b2378e97a94,
       type: 2}

@@ -112,6 +112,8 @@ struct ThreadSafeAttribute_t3FB9EE5993C748628BC06D9D46ACA3A58FDAE317;
 struct VisibleToOtherModulesAttribute_t8601A3A00D7B9528C62DD278E53B317B566FDA90;
 // UnityEngine.NativeClassAttribute
 struct NativeClassAttribute_t1CA9B99EEAAFC1EE97D52505821BD3AD15F8448C;
+// UnityEngine.Scripting.GeneratedByOldBindingsGeneratorAttribute
+struct GeneratedByOldBindingsGeneratorAttribute_tF3386E1746F60B4E1D77C2167915FBB4B89BBA86;
 // UnityEngine.Scripting.RequiredByNativeCodeAttribute
 struct RequiredByNativeCodeAttribute_t949320E827C2BD269B3E686FE317A18835670AAE;
 // UnityEngine.Scripting.UsedByNativeCodeAttribute
@@ -137,6 +139,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* AssetFileNameExtensionAttribute__ctor_m49EB
 IL2CPP_EXTERN_C const RuntimeMethod* FreeFunctionAttribute__ctor_m18D7DE98494E55663EB23287EE6DB00E6649241F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* FreeFunctionAttribute__ctor_m54898E27CB62607552A0612FA26165A18CB3F444_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* FreeFunctionAttribute__ctor_m69E4EBDD649729C9473BA68585097AF48D06B83D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GeneratedByOldBindingsGeneratorAttribute__ctor_m16915B4C437B4BE69681DD9A0A368FCD6155EB81_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* IgnoreAttribute__ctor_m4B78BE44704DA9040A683AC928187E1DAE6BC885_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* IgnoreAttribute_set_DoesNotContributeToSize_mF507E8A0ADF588062014330B44B9BD674D7A75AA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* NativeClassAttribute__ctor_m814DCB23A54C2AE01ACDB1930DDF06277CAD9DE8_RuntimeMethod_var;
@@ -219,6 +222,7 @@ IL2CPP_EXTERN_C const uint32_t AssetFileNameExtensionAttribute__ctor_m49EB0E6BB7
 IL2CPP_EXTERN_C const uint32_t FreeFunctionAttribute__ctor_m18D7DE98494E55663EB23287EE6DB00E6649241F_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t FreeFunctionAttribute__ctor_m54898E27CB62607552A0612FA26165A18CB3F444_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t FreeFunctionAttribute__ctor_m69E4EBDD649729C9473BA68585097AF48D06B83D_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t GeneratedByOldBindingsGeneratorAttribute__ctor_m16915B4C437B4BE69681DD9A0A368FCD6155EB81_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t IgnoreAttribute__ctor_m4B78BE44704DA9040A683AC928187E1DAE6BC885_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t IgnoreAttribute_set_DoesNotContributeToSize_mF507E8A0ADF588062014330B44B9BD674D7A75AA_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t NativeClassAttribute__ctor_m814DCB23A54C2AE01ACDB1930DDF06277CAD9DE8_MetadataUsageId;
@@ -1244,6 +1248,15 @@ public:
 		___U3CDeclarationU3Ek__BackingField_1 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CDeclarationU3Ek__BackingField_1), (void*)value);
 	}
+};
+
+
+// UnityEngine.Scripting.GeneratedByOldBindingsGeneratorAttribute
+struct  GeneratedByOldBindingsGeneratorAttribute_tF3386E1746F60B4E1D77C2167915FBB4B89BBA86  : public Attribute_tF048C13FB3C8CFCC53F82290E4A3F621089F9A74
+{
+public:
+
+public:
 };
 
 
@@ -3870,6 +3883,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeClassAttribute__ctor_mFAF14B283CE2
 		NativeClassAttribute_set_Declaration_m2C630638B2BB58F82CA43663F183761444524F1A_inline(__this, L_1, /*hidden argument*/NULL);
 		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_SharedInternalsModule + 40));
 		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_SharedInternalsModule + 37));
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void UnityEngine.Scripting.GeneratedByOldBindingsGeneratorAttribute::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GeneratedByOldBindingsGeneratorAttribute__ctor_m16915B4C437B4BE69681DD9A0A368FCD6155EB81 (GeneratedByOldBindingsGeneratorAttribute_tF3386E1746F60B4E1D77C2167915FBB4B89BBA86 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (GeneratedByOldBindingsGeneratorAttribute__ctor_m16915B4C437B4BE69681DD9A0A368FCD6155EB81_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, GeneratedByOldBindingsGeneratorAttribute__ctor_m16915B4C437B4BE69681DD9A0A368FCD6155EB81_RuntimeMethod_var, NULL, NULL, NULL);
+	CHECK_PAUSE_POINT;
+	{
+		Attribute__ctor_m45CAD4B01265CC84CC5A84F62EE2DBE85DE89EC0(__this, /*hidden argument*/NULL);
 		return;
 	}
 }

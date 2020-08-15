@@ -1,10 +1,8 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - DelayedCamera
-    - PeopleOcclusionPostEffect
-    - UnityEngine.XR.ARFoundation.Samples.BackButton
-    - UnityEngine.XR.ARFoundation.Samples.ProjectileLauncher
+    - MicVolumeSample
+    - PermissionAuthorizationTest.PermissionAuthorizationExample
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -17,16 +15,6 @@ ScriptsOnlyBuild:
     - UnityEditor.XR.ARCore.ARCoreSettings
     Unity.XR.ARCore.dll:
     - UnityEngine.XR.ARCore.ARCoreLoader
-    Unity.XR.ARFoundation.dll:
-    - UnityEngine.XR.ARFoundation.ARCameraBackground
-    - UnityEngine.XR.ARFoundation.ARCameraManager
-    - UnityEngine.XR.ARFoundation.ARInputManager
-    - UnityEngine.XR.ARFoundation.ARMeshManager
-    - UnityEngine.XR.ARFoundation.AROcclusionManager
-    - UnityEngine.XR.ARFoundation.ARPlaneManager
-    - UnityEngine.XR.ARFoundation.ARPoseDriver
-    - UnityEngine.XR.ARFoundation.ARSession
-    - UnityEngine.XR.ARFoundation.ARSessionOrigin
     Unity.XR.ARKit.Editor.dll:
     - UnityEditor.XR.ARKit.ARKitSettings
     Unity.XR.ARKit.dll:
@@ -43,14 +31,11 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
-    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
-    - UnityEngine.UI.Image
-    - UnityEngine.UI.RawImage
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/App/Scenes/OcclusionTest.unity:
+    Assets/App/Scenes/AudioTest.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -59,21 +44,13 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
     - Class: 28
-      Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 54
+    - Class: 81
       Script: {instanceID: 0}
-    - Class: 64
-      Script: {instanceID: 0}
-    - Class: 84
+    - Class: 82
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -82,56 +59,24 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11212}
     - Class: 114
-      Script: {instanceID: 11214}
-    - Class: 114
       Script: {instanceID: 11238}
-    - Class: 114
-      Script: {instanceID: 11252}
-    - Class: 114
-      Script: {instanceID: 11488}
-    - Class: 114
-      Script: {instanceID: 11596}
-    - Class: 114
-      Script: {instanceID: 11680}
     - Class: 114
       Script: {instanceID: 12020}
     - Class: 114
-      Script: {instanceID: 12364}
-    - Class: 114
-      Script: {instanceID: 12636}
-    - Class: 114
-      Script: {instanceID: 12896}
-    - Class: 114
-      Script: {instanceID: 13110}
-    - Class: 114
       Script: {instanceID: 13244}
     - Class: 114
-      Script: {instanceID: 13274}
-    - Class: 114
-      Script: {instanceID: 13292}
-    - Class: 114
-      Script: {instanceID: 13308}
-    - Class: 114
-      Script: {instanceID: 13420}
-    - Class: 114
-      Script: {instanceID: 13456}
-    - Class: 114
-      Script: {instanceID: 13470}
-    - Class: 114
-      Script: {instanceID: 13596}
-    - Class: 114
       Script: {instanceID: 13720}
+    - Class: 114
+      Script: {instanceID: 19666}
+    - Class: 114
+      Script: {instanceID: 21318}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
-    - Class: 135
-      Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -1286,7 +1231,19 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: UnityEngine.XR.ARFoundation.Samples
     className: Rotator
+  - hash:
+      serializedVersion: 2
+      Hash: def35f02f0f45169794a8bb5896e9dba
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MicVolumeSample
+  - hash:
+      serializedVersion: 2
+      Hash: 4c8f42ce640dd8bc77607659113074e2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PermissionAuthorizationTest
+    className: PermissionAuthorizationExample
   platform: 9
   scenePathNames:
-  - Assets/App/Scenes/OcclusionTest.unity
+  - Assets/App/Scenes/AudioTest.unity
   playerPath: /Users/Nobuhiko/Documents/MyProjet/build/HumanSegmentation
