@@ -47,6 +47,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.RawImage
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/App/Scenes/OcclusionTest.unity:
@@ -81,43 +82,45 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11212}
     - Class: 114
-      Script: {instanceID: 11238}
+      Script: {instanceID: 11214}
     - Class: 114
-      Script: {instanceID: 11252}
+      Script: {instanceID: 11246}
     - Class: 114
-      Script: {instanceID: 11486}
+      Script: {instanceID: 11260}
     - Class: 114
-      Script: {instanceID: 11594}
+      Script: {instanceID: 11496}
     - Class: 114
-      Script: {instanceID: 11678}
+      Script: {instanceID: 11604}
     - Class: 114
-      Script: {instanceID: 12018}
+      Script: {instanceID: 11688}
     - Class: 114
-      Script: {instanceID: 12362}
+      Script: {instanceID: 12028}
     - Class: 114
-      Script: {instanceID: 12634}
+      Script: {instanceID: 12372}
     - Class: 114
-      Script: {instanceID: 12894}
+      Script: {instanceID: 12644}
     - Class: 114
-      Script: {instanceID: 13108}
+      Script: {instanceID: 12904}
     - Class: 114
-      Script: {instanceID: 13242}
+      Script: {instanceID: 13118}
     - Class: 114
-      Script: {instanceID: 13272}
+      Script: {instanceID: 13252}
     - Class: 114
-      Script: {instanceID: 13290}
+      Script: {instanceID: 13282}
     - Class: 114
-      Script: {instanceID: 13306}
+      Script: {instanceID: 13300}
     - Class: 114
-      Script: {instanceID: 13418}
+      Script: {instanceID: 13316}
     - Class: 114
-      Script: {instanceID: 13454}
+      Script: {instanceID: 13428}
     - Class: 114
-      Script: {instanceID: 13468}
+      Script: {instanceID: 13464}
     - Class: 114
-      Script: {instanceID: 13594}
+      Script: {instanceID: 13478}
     - Class: 114
-      Script: {instanceID: 13718}
+      Script: {instanceID: 13604}
+    - Class: 114
+      Script: {instanceID: 13728}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -275,6 +278,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: TouchInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: f4d291b7051a19ae9972901030f694f6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DelayedCamera2
   - hash:
       serializedVersion: 2
       Hash: 63e8494d8961e584a57c5e4286e89c75
@@ -643,7 +652,7 @@ ScriptsOnlyBuild:
     className: Tooltip
   - hash:
       serializedVersion: 2
-      Hash: 8c217bea4f8a942a87ee3655f41b2ca7
+      Hash: 57030eec760300528ae5ecb39c7a2508
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DelayedCamera
@@ -1277,12 +1286,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: UnityEngine.XR.ARFoundation.Samples
     className: Rotator
-  - hash:
-      serializedVersion: 2
-      Hash: f4d291b7051a19ae9972901030f694f6
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DelayedCamera2
   platform: 9
   scenePathNames:
   - Assets/App/Scenes/OcclusionTest.unity

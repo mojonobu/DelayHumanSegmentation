@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/App/Scenes/DelayTextureTest.unity
+- path: Assets/App/Scenes/OcclusionTest.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

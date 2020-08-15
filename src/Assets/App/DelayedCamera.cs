@@ -111,6 +111,7 @@ public class DelayedCamera : MonoBehaviour
         sourceTexture = postEffect.handTexture;
     }
 
+    public RenderTexture delayedBodyTexture;
     /// <summary>
     /// Makes the camera render with a delay
     /// </summary>
@@ -131,7 +132,7 @@ public class DelayedCamera : MonoBehaviour
             // The foor loop is **voluntary** empty
             for ( ; frames[renderedFrameIndex].CapturedBefore( Time.time - delay ) ; renderedFrameIndex = ( renderedFrameIndex + 1 ) % bufferSize ) ;
 
-            Graphics.Blit( frames[renderedFrameIndex], null as RenderTexture );
+            Graphics.Blit( frames[renderedFrameIndex], delayedBodyTexture );
             // yield return new WaitForSeconds(0.1f);
 
             frameIndex++;

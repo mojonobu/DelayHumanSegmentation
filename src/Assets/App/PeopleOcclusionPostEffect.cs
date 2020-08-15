@@ -57,9 +57,6 @@ public class PeopleOcclusionPostEffect : MonoBehaviour
 
     void OnRenderImage(RenderTexture source, RenderTexture destination)
     {
-        Debug.Log("source :" + source.dimension.ToString());
-        // Debug.Log("dest :" + destination.dimension.ToString());
-        Debug.Log("hand :" + handTexture.dimension.ToString());
 
         if (PeopleOcclusionSupported())
         {
@@ -93,11 +90,14 @@ public class PeopleOcclusionPostEffect : MonoBehaviour
             //m_material.SetFloat("_ARWorldScale", 1f/m_arOrigin.transform.localScale.x);
 
             // StartCoroutine(DelayRendering(source, destination, m_material));
+            Graphics.Blit(source, null as RenderTexture);
+
             Graphics.Blit(source, handTexture, m_material);
         }
         else
         {
             // StartCoroutine(DelayRendering(source, destination, null));
+            Graphics.Blit(source, null as RenderTexture);
             Graphics.Blit(source, handTexture);
         }
     }
